@@ -13,4 +13,15 @@
 // data.Yujin = 70;
 // data.Hyewon = 100;
 // console.log(data);
-//해결중
+const name = "Yujin Hyewon";
+const math = "70 100";
+const keys = name.split(" ");
+const value = math.split(" ");
+const score = {};
+for (let i = 0; i < keys.length; i++) {
+    score[keys[i]] = parseInt(value[i], 10);
+}
+console.log(score);
+//split : 문자열에서 특정부분을빼고 나머지부분들을 배열안 문자열로 나눔
+//{[]} : 배열로 접근하기위해 사용됨//헷갈림
+//{parseInt} : 문자열로 오는것을 상수특히(,10)으로오기에 10진수로 변환해주기위해 사용됨
